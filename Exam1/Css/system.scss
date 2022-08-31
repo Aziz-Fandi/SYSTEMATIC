@@ -1,0 +1,392 @@
+$colors: (
+  top: #ba2e1f,
+  text: white,
+  link: #333333,
+  title: rgb(165, 165, 165),
+);
+
+$margin: (
+  left: 15px,
+  right: 20px,
+);
+
+body {
+  font-family: "Bona Nova", serif;
+  font-family: "Inconsolata", monospace;
+  font-family: "Slabo 27px", serif;
+  margin: 0px;
+}
+
+header#top-head {
+  background-color: map-get($colors, top);
+  color: white;
+  padding-top: 0.1px;
+  padding-bottom: 0.1px;
+  padding-left: 15px;
+  font-size: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+#sbox {
+  margin-right: map-get($margin, right);
+}
+
+#search {
+  border-radius: 20px;
+  border-color: rgb(252, 252, 252);
+  border-style: solid;
+  margin-right: 0;
+}
+
+.fa-search {
+  margin-left: 0px;
+}
+
+em {
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+  font-size: 50px;
+}
+
+#primary {
+  margin-left: map-get($margin, left);
+  line-height: 0.9;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  .h1 {
+    font-size: 40px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+  }
+
+  .p1 {
+    font-size: smaller;
+    margin-top: 0;
+  }
+
+  .icons {
+    margin-right: map-get($margin, right);
+    font-size: 25px;
+
+    .fa-linkedin-in {
+      background-color: map-get($colors, link);
+      color: white;
+      border-radius: 50px;
+      padding: 10px 10px 10px 10px;
+      margin-right: 7px;
+    }
+
+    .fa-twitter {
+      background-color: map-get($colors, link);
+      color: white;
+      border-radius: 50px;
+      padding: 10px 10px 10px 10px;
+      margin-right: 7px;
+    }
+
+    .fa-pinterest-p {
+      width: 24px;
+      background-color: map-get($colors, link);
+      color: white;
+      border-radius: 50px;
+      padding: 10px 10px 10px 10px;
+      margin-right: 7px;
+    }
+
+    .fa-google-plus-g {
+      width: 26px;
+      background-color: map-get($colors, link);
+      color: white;
+      border-radius: 50px;
+      padding: 10px 10px 10px 10px;
+      margin-right: 7px;
+    }
+
+    .fa-wifi {
+      width: 26px;
+      height: 26px;
+      background-color: map-get($colors, link);
+      color: white;
+      border-radius: 50px;
+      padding: 10px 10px 10px 10px;
+    }
+
+    .fab:hover {
+      color: #ee802f;
+    }
+    .fas:hover {
+      color: #ee802f;
+    }
+  }
+}
+
+#primary a {
+  text-decoration: none;
+}
+
+#link {
+  margin-left: map-get($margin, left);
+  background-color: map-get($colors, link);
+  padding: 15px;
+  margin-right: map-get($margin, right);
+  margin-top: 60px;
+  border-radius: 10px;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  .home:hover {
+    color: #ba2e1f;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+}
+
+#img1 {
+  width: 400px;
+  height: 440px;
+  margin-left: map-get($margin, left);
+  margin-top: 40px;
+  margin-right: 13%;
+  float: left;
+}
+
+#part1 {
+  margin-top: 75px;
+  margin-right: map-get($margin, right);
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  align-content: left;
+
+  h1 {
+    font-size: 120px;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: left;
+  }
+  a {
+    margin-left: 600px;
+    color: #ba2e1f;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+}
+
+#part2 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  margin-top: 50px;
+  margin-right: map-get($margin, right);
+  margin-left: map-get($margin, left);
+  color: #333333;
+}
+
+.t1 {
+  flex-basis: 25%;
+
+  .img1 {
+    margin-left: 15px;
+  }
+  a {
+    text-decoration: none;
+    color: #ba2e1f;
+    padding-left: 150px;
+  }
+  p {
+    font-size: 17px;
+  }
+}
+#about-us {
+  margin-top: 50px;
+  color: #878787;
+}
+.t2 {
+  flex-basis: 25%;
+
+  img {
+    width: 64px;
+    height: 64px;
+    margin-right: 10px;
+    float: left;
+    margin-bottom: 19px;
+  }
+
+  #title {
+    margin-bottom: 3px;
+    margin-top: 30px;
+    color: #878787;
+  }
+  #para {
+    font-size: 18px;
+    margin-top: 50px;
+    color: #878787;
+
+    ul {
+      padding-left: 0;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: #ba2e1f;
+    padding-left: 130px;
+  }
+}
+
+.t3 {
+  flex-basis: 35%;
+
+  #clients1 {
+    color: #878787;
+    margin-top: 50px;
+  }
+  #clients2 {
+    color: #878787;
+    margin-top: 10px;
+  }
+
+  .fa-quote-left {
+    color: map-get($colors, title);
+    font-size: 75px;
+    float: left;
+    margin-right: 10px;
+  }
+  .tommy {
+    margin-left: 100px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding-top: 25px;
+  }
+  .p1 {
+    font-size: 17px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  a {
+    text-decoration: none;
+    color: #ba2e1f;
+    padding-left: 300px;
+  }
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  margin-right: map-get($margin, right);
+  margin-left: map-get($margin, left);
+  margin-top: 100px;
+  color: #666666;
+}
+
+.d1 {
+  border-top: 1px solid;
+  flex-basis: 20%;
+
+  p a {
+    text-decoration: none;
+    color: #ba2e1f;
+  }
+}
+.d2 {
+  border-top: 1px solid;
+  flex-basis: 20%;
+
+  ul {
+    padding-left: 0px;
+  }
+
+  ul li {
+    border-bottom: 1px solid #d4d4d4;
+    margin-bottom: 0.1in;
+    list-style-type: "»";
+    padding-right: 5px;
+  }
+
+  ul li a {
+    text-decoration: none;
+    color: #666666;
+    margin-left: 10px;
+  }
+}
+
+.d3 {
+  border-top: 1px solid;
+  flex-basis: 20%;
+
+  h4 {
+    margin-bottom: 0;
+  }
+  p {
+    margin-top: 0;
+  }
+  a {
+    color: #ba2e1f;
+    text-decoration: none;
+    padding-left: 140px;
+  }
+
+  em {
+    color: #ba2e1f;
+    font-size: medium;
+  }
+}
+.d4 {
+  border-top: 1px solid;
+  flex-basis: 20%;
+
+  #name {
+    background-color: #f2f2f2;
+    border-color: #f2f2f2;
+    border-style: solid;
+    padding: 10px 50px 10px 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  #message {
+    background-color: #f2f2f2;
+    border-color: #f2f2f2;
+    border-style: solid;
+    padding: 10px 50px 110px 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  #submit {
+    color: #ba2e1f;
+    background-color: #f2f2f2;
+    border-color: white;
+    border-style: solid;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    font-family: "Inconsolata", monospace;
+    font-family: "Slabo 27px", serif;
+    font-size: 16px;
+  }
+}
+.end {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-left: map-get($margin, left);
+  margin-right: map-get($margin, right);
+  color: #919191;
+}
